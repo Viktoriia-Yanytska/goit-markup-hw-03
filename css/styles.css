@@ -4,12 +4,39 @@ body {
     background-color: #fff;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 a {
     text-decoration: none;
 }
 
 ul, ol {
     list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -20,9 +47,15 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-part { color: #2E2F42;
+}
+
+.nav-list { display: flex;
+    gap: 40px;
+
 }
 
 .nav-link { color: #2E2F42;
@@ -30,6 +63,8 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
@@ -39,6 +74,12 @@ ul, ol {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.adress-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link { color: #434455;
@@ -58,8 +99,13 @@ ul, ol {
     overflow: hidden;
     white-space: nowrap;
 }
-.hero {
-    background: #2e2f42;
+.hero { padding-bottom: 120px;
+    
+}
+
+.hero-wrap { background: #2e2f42;
+    
+   
 }
 
 .hero-title {
@@ -69,6 +115,9 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+   
+    
 }
 
 .hero-btn-main {
@@ -79,16 +128,24 @@ ul, ol {
     color: #fff;
     cursor: pointer;
     background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    display: block;
 }
 .hero-btn-main:hover,
 .hero-btn-main:focus {
     background-color: #404BBF;
 }
 
-.features {
+.features { padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .features-list {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .features-item {
@@ -100,6 +157,7 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-item-title {
@@ -111,7 +169,8 @@ ul, ol {
 
 .taste { 
     background-color: #F4F4FD;
-    
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .taste-title {
@@ -154,7 +213,8 @@ ul, ol {
    color: #434455;
 }
 
-.tastee {
+.tastee {  padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .tastee-title { 
