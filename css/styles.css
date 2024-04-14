@@ -104,7 +104,7 @@ border-bottom: 1px solid #e7e9fc;
 }
 
 .hero-wrap { background: #2e2f42;
-    
+    padding: 188px 0; 
    
 }
 
@@ -116,7 +116,7 @@ border-bottom: 1px solid #e7e9fc;
     text-align: center;
     color: #fff;
     margin-bottom: 48px;
-   
+    max-width: 496px;
     
 }
 
@@ -133,6 +133,9 @@ border-bottom: 1px solid #e7e9fc;
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 .hero-btn-main:hover,
 .hero-btn-main:focus {
@@ -143,12 +146,18 @@ border-bottom: 1px solid #e7e9fc;
     padding-bottom: 120px;
 }
 
+.visually-hidden{
+
+}
 .features-list {
     padding-left: 24px;
     padding-right: 24px;
+    display: flex;
+    gap: 24px;
+
 }
 
-.features-item {
+.features-item { width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -181,14 +190,24 @@ border-bottom: 1px solid #e7e9fc;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .taste-list { 
     background-color: #FFFFFF;
+    display: flex;
+    gap: 24px;
 }
 
 .taste-item { 
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.name { padding: 32px 0;
+
 }
 
 .taste-image {
@@ -201,6 +220,7 @@ border-bottom: 1px solid #e7e9fc;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
     
 }
 
@@ -225,14 +245,23 @@ border-bottom: 1px solid #e7e9fc;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.tastee-list {
+.tastee-list { display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-.tastee-item {
+.tastee-item { width: calc((100% - 48px) / 3);
 }
 
+.image {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .tastee-image {
 }
 
@@ -242,6 +271,7 @@ border-bottom: 1px solid #e7e9fc;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .tastee-text { 
@@ -254,6 +284,7 @@ border-bottom: 1px solid #e7e9fc;
 
 .footer { 
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .logoo {  
@@ -264,6 +295,8 @@ border-bottom: 1px solid #e7e9fc;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px; 
 }
 
 .logoo-part {
